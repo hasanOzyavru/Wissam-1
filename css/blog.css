@@ -1,0 +1,29 @@
+.con {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+    grid-template-rows: 200px 300px 150px;
+    grid-template-areas:
+        ". h h h h ."
+        "m m m . s s"
+        ". . f f f f";
+}
+
+#sec1 {
+    color: red;
+    grid-area: h;
+}
+
+#sec2 {
+    color: green;
+    grid-area: m;
+}
+
+#sec3 {
+    color: blue;
+    grid-area: s;
+}
+
+#sec4 {
+    color: yellow;
+    grid-area: f;
+}
